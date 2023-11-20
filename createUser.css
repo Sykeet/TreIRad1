@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather'), url('Merriweather-Regular.ttf'), format('ttf');
+}
+
+nav {
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 30px;
+}
+
+
+a:link {
+  color: rgb(255, 1, 1);
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: rgb(255, 1, 1);
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: rgb(119, 119, 119);
+  text-decoration: rgb(0, 0, 0) underline;
+}
+
+
+a:active {
+  color: rgb(255, 1, 1);
+}
+
+
+#createPlayer {
+  width: 50%;
+  height: auto;
+  margin-top: 10vh;
+}
+
+.player-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: 'Merriweather', sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+h2 {
+  font-family: 'Merriweather', sans-serif;
+  color: rgb(27, 27, 27);
+  margin-right: 10px;
+  width: 110px;
+}
+
+input {
+  flex: 1;
+  font-family: 'Merriweather', sans-serif;
+  font-size: xx-large;
+  width: 10vh;
+  margin-left: 10px;
+}
+
+
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}

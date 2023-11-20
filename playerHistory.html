@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="matchHistory.css">
+  <title>Player History</title>
+</head>
+
+<body>
+    <nav>|
+      <a href="homepage.html">Homepage</a> |
+      <a href="createUser.html">Start Game</a> |
+      <a href="matchHistory.html">Matches</a> |
+      <a href="leaderboard.html">Leaderboard</a> |
+      <a href="playerHistory.html">Player Matches</a> |
+      <a href="allPlayers.html">All Players</a> |
+    </nav>
+
+  <div class="upperSection">
+    <label for="nameSelector" class="choice">Choose Player: </label>
+    <select class="choice" id="nameSelector"></select>
+    <button class="choice" onclick="showPlayerHistory()">Show</button>
+  </div>
+  <div id="resultContainer"></div>
+  
+  <script src="playerHistory.js" defer></script>
+</body>
+
+</html>

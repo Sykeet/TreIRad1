@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather'), url('Merriweather-Regular.ttf'), format('ttf');
+}
+
+nav {
+  text-align: center;
+  font-family: 'Merriweather', sans-serif;
+  font-size: 30px;
+}
+
+
+a:link {
+  color: rgb(255, 1, 1);
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: rgb(255, 1, 1);
+  text-decoration: none;
+}
+
+
+a:hover {
+  color: rgb(119, 119, 119);
+  text-decoration: rgb(0, 0, 0) underline;
+}
+
+
+a:active {
+  color: rgb(255, 1, 1);
+}
+
+#matchHistoryTable {
+  width: 90%;
+  height: auto;
+
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  background-color: rgb(255, 255, 255);
+  color: rgb(27, 27, 27);
+  text-align: center;
+
+}
+
+table {
+  margin: 50px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+
+}
+
+th {
+  background-color: rgb(255, 1, 1);
+  color: white;
+}
+
+h2 {
+  font-family: 'Merriweather';
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5vh;
+  text-decoration: underline rgb(0, 0, 0);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="game.css">
+  <script src="game.js" defer></script>
+  <title>Tre I Rad</title>
+</head>
+
+<body>
+  <nav>|
+    <a href="homepage.html">Homepage</a> |
+    <a href="createUser.html">Start Game</a> |
+    <a href="matchHistory.html">Matches</a> |
+    <a href="leaderboard.html">Leaderboard</a> |
+    <a href="playerHistory.html">Player Matches</a> |
+    <a href="allPlayers.html">All Players</a> |
+  </nav>
+
+  <section id="Player X:"></section>
+  <section id="Player O:"></section>
+
+  <div class="board" id="board">
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+  </div>
+  <div class="winning-message" id="winningMessage">
+    <div data-winning-message-text></div>
+    <button id="endGameBtn">Leaderboard</button>
+  </div>
+</body>
+
+</html>
