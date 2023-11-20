@@ -1,10 +1,8 @@
 var usersData = localStorage.getItem("users");
 
-
 if (usersData) {
 
   var users = JSON.parse(usersData);
-
 
   for (var key in users) {
     if (users.hasOwnProperty(key)) {

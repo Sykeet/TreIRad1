@@ -9,29 +9,24 @@ nav {
   font-size: 30px;
 }
 
-
 a:link {
   color: rgb(255, 1, 1);
   text-decoration: none;
 }
-
 
 a:visited {
   color: rgb(255, 1, 1);
   text-decoration: none;
 }
 
-
 a:hover {
   color: rgb(119, 119, 119);
   text-decoration: rgb(0, 0, 0) underline;
 }
 
-
 a:active {
   color: rgb(255, 1, 1);
 }
-
 
 #createPlayer {
   width: 50%;
@@ -55,7 +50,6 @@ button {
   justify-content: center;
 }
 
-
 h2 {
   font-family: 'Merriweather', sans-serif;
   color: rgb(27, 27, 27);
@@ -70,7 +64,6 @@ input {
   width: 10vh;
   margin-left: 10px;
 }
-
 
 body {
   background-color: rgb(255, 255, 255);

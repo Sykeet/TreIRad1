@@ -14,18 +14,15 @@ a:link {
   text-decoration: none;
 }
 
-
 a:visited {
   color: rgb(255, 1, 1);
   text-decoration: none;
 }
 
-
 a:hover {
   color: rgb(119, 119, 119);
   text-decoration: rgb(0, 0, 0) underline;
 }
-
 
 a:active {
   color: rgb(255, 1, 1);

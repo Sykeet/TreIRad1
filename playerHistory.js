@@ -1,10 +1,7 @@
 var matchHistory = [];
-
 document.addEventListener('DOMContentLoaded', function () {
   matchHistory = getMatchHistory();
-
   var nameSelector = document.getElementById('nameSelector');
-
   var uniquePlayerNames = {};
   for (var i = 0; i < matchHistory.length; i++) {
     var currentMatch = matchHistory[i];
@@ -26,13 +23,9 @@ function getMatchHistory() {
 }
 
 function showPlayerHistory() {
-
   var selectedPlayerName = nameSelector.value;
-
   var resultContainer = document.getElementById('resultContainer');
-
   var playerHistory = findPlayerHistory(selectedPlayerName);
-
   if (playerHistory.length > 0) {
     resultContainer.innerHTML = 'Match History For ' + selectedPlayerName + ':<br>' + '<hr>' + playerHistory.join('<br>' + '<hr>');
   } else {
@@ -54,6 +47,5 @@ function findPlayerHistory(playerName) {
       playerHistory.push(historyString);
     }
   }
-
   return playerHistory;
 }

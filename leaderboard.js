@@ -10,7 +10,6 @@ function displayPlayerResults() {
   }
 
   existingData = JSON.parse(existingData);
-
   let sortedPlayers = Object.values(existingData)
     .filter(player => player.score !== undefined)
     .sort((a, b) => (b.score || 0) - (a.score || 0));

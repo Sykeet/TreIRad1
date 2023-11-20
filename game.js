@@ -2,7 +2,6 @@ const playerXName = localStorage.getItem('playerXName');
 const playerOName = localStorage.getItem('playerOName');
 
 let moveCount = 0;
-
 let storedData = localStorage.getItem('users');
 const X_CLASS = 'x';
 const CIRCLE_CLASS = 'circle';
@@ -22,9 +21,7 @@ const board = document.getElementById('board');
 const winningMessageElement = document.getElementById('winningMessage');
 const endGameBtn = document.getElementById('endGameBtn');
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]');
-
 let circleTurn;
-
 
 startGame();
 
@@ -41,8 +38,6 @@ function goToEndGamePage() {
 
 function startGame() {
   circleTurn = false;
-
-
   cellElements.forEach(cell => {
     cell.classList.remove(X_CLASS);
     cell.classList.remove(CIRCLE_CLASS);
@@ -63,9 +58,7 @@ function handleClick(e) {
   }
 
   const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS;
-
   placeMark(cell, currentClass);
-
   moveCount++;
 
   if (checkWin(currentClass)) {
@@ -115,7 +108,6 @@ function placeMark(cell, currentClass) {
     alertMark.classList.add('lastSelected');
   }
   marks.push(cell);
-
   cell.classList.add(currentClass);
 }
 
@@ -142,7 +134,6 @@ function checkWin(currentClass) {
 
   if (isWinner) {
     console.log(`${currentClass === X_CLASS ? playerXName : playerOName} has won!`);
-
     let existingData = localStorage.getItem('users');
 
     if (existingData) {
@@ -171,8 +162,6 @@ function checkWin(currentClass) {
     let matchHistory = localStorage.getItem('matchHistory') ? JSON.parse(localStorage.getItem('matchHistory')) : [];
     matchHistory.push(matchResult);
     localStorage.setItem('matchHistory', JSON.stringify(matchHistory));
-
   }
-
   return isWinner;
 }

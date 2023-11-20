@@ -19,6 +19,19 @@
     <a href="playerHistory.html">Player Matches</a> |
     <a href="allPlayers.html">All Players</a> |
   </nav>
+    <button onclick="playAudio()">Play Music</button>
+    <button onclick="pauseAudio()">Pause Music</button>
+    <iframe id="bg-music" width="0" height="0" src="https://www.youtube.com/embed/0ouMaLRth-s?enablejsapi=1" frameborder="0"
+      allow="autoplay"></iframe>
+    <script>
+      var musicIframe = document.getElementById('bg-music');
+      function playAudio() {
+        musicIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+      }
+      function pauseAudio() {
+        musicIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+      }
+    </script>
 
   <section id="Player X:"></section>
   <section id="Player O:"></section>
